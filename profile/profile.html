@@ -1,0 +1,829 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FN Muthoni Advocates — Company Profile 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#161843; --deep:#0d0e2e; --bronze:#8c6f58; --tan:#c39a78; --sand:#dbcec5; --mist:#ecebe7;
+  --ink:#231f20; --muted:#55525c; --paper:#fbfaf7;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost","Segoe UI",sans-serif; --script:"Allura",cursive;
+}
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#888}
+body{font-family:var(--sans);color:var(--ink);font-size:10.5pt;line-height:1.62;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;background:var(--paper);margin:0 auto 8mm;page-break-after:always;break-after:page}
+@media print{html,body{background:none}.page{margin:0}}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;color:var(--navy);line-height:1.08}
+p{margin-bottom:3.2mm}
+.eyebrow{font:500 8pt/1 var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--bronze);display:flex;align-items:center;gap:3mm;margin-bottom:5mm}
+.eyebrow:before{content:"";width:10mm;height:.5mm;background:currentColor}
+.light .eyebrow,.eyebrow.light{color:var(--tan)}
+
+/* photos: one consistent navy grade across every image */
+.ph{position:absolute;background-size:cover;background-position:center}
+.ph:after{content:"";position:absolute;inset:0;background:rgba(22,24,67,.18)}
+.ph.mono:after{background:rgba(22,24,67,.5)}
+
+/* letterhead stripe motif */
+.str{position:absolute;pointer-events:none}
+.str i{position:absolute;display:block;transform:rotate(38deg);transform-origin:center}
+
+/* running footer */
+.foot{position:absolute;left:16mm;right:16mm;bottom:9mm;display:flex;justify-content:space-between;align-items:center;font-size:7.5pt;letter-spacing:.08em;color:var(--muted);border-top:.3mm solid var(--sand);padding-top:3mm}
+.foot b{font:600 11pt var(--serif);color:var(--navy);letter-spacing:0}
+.foot.light{color:#b9b9cc;border-color:rgba(255,255,255,.2)}
+.foot.light b{color:var(--tan)}
+
+/* ---------- 1. Cover ---------- */
+.cover{background:var(--deep);color:#fff}
+.cover .ph{inset:0;background-position:center 60%}
+.cover .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,14,46,.92) 0%,rgba(13,14,46,.35) 38%,rgba(13,14,46,.15) 55%,rgba(13,14,46,.96) 86%)}
+.cover .str{inset:0}
+.cover .logo{position:absolute;top:22mm;left:0;right:0;text-align:center}
+.cover .logo img{height:40mm;margin:0 auto}
+.cover .title{position:absolute;left:18mm;right:18mm;bottom:56mm}
+.cover .title small{display:block;font:500 9pt var(--sans);letter-spacing:.5em;color:var(--tan);margin-bottom:4mm}
+.cover .title h1{color:#fff;font-size:58pt;font-weight:500;letter-spacing:.01em}
+.cover .title h1 em{font-family:var(--script);font-style:normal;color:var(--tan);font-size:64pt;font-weight:400;display:inline-block;margin-left:2mm}
+.cover .title p{font:300 12pt var(--sans);color:#dcdbe8;letter-spacing:.04em;margin-top:5mm}
+.cover .bar{position:absolute;left:0;right:0;bottom:0;height:30mm;background:var(--navy);display:flex;align-items:center;padding:0 18mm;gap:10mm;border-top:1mm solid var(--tan)}
+.cover .bar div{font-size:8.5pt;color:#cfcfe0;line-height:1.4}
+.cover .bar div b{display:block;font:500 7pt var(--sans);letter-spacing:.24em;color:var(--tan);text-transform:uppercase}
+.cover .year{margin-left:auto;font:600 30pt var(--serif)!important;color:#fff!important}
+
+/* ---------- 2. Contents ---------- */
+.toc{display:grid;grid-template-columns:72mm 1fr;height:100%}
+.toc .side{position:relative;background:var(--navy);overflow:hidden}
+.toc .side .ph{inset:0}
+.toc .side .over{position:absolute;inset:0;background:linear-gradient(180deg,rgba(22,24,67,.25),rgba(13,14,46,.92))}
+.toc .side .script{position:absolute;left:10mm;right:10mm;bottom:22mm;color:#fff;font:500 21pt/1.2 var(--serif)}
+.toc .side .script em{color:var(--tan)}
+.toc .main{padding:28mm 18mm 20mm 16mm}
+.toc h2{font-size:40pt;margin-bottom:12mm}
+.toc ol{list-style:none}
+.toc li{display:flex;align-items:baseline;gap:3mm;padding:2.3mm 0;border-bottom:.25mm solid var(--mist);font-size:10.5pt}
+.toc li .n{font:600 13pt var(--serif);color:var(--tan);width:9mm}
+.toc li .t{flex:1;color:var(--navy);font-weight:500}
+.toc li .pg{font:600 12pt var(--serif);color:var(--bronze)}
+.toc li.sub{padding:1.4mm 0 1.4mm 12mm;font-size:9.5pt;border-bottom:none}
+.toc li.sub .t{color:var(--muted);font-weight:400}
+.toc li.sub .pg{font-size:10.5pt}
+
+/* ---------- 3. Purpose ---------- */
+.purpose{background:var(--deep);color:#fff}
+.purpose .ph{inset:0}
+.purpose .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,14,46,.96) 0%,rgba(13,14,46,.82) 55%,rgba(13,14,46,.45) 100%)}
+.purpose .body{position:absolute;left:20mm;right:34mm;top:70mm}
+.purpose .q{font:700 120pt/0.6 var(--serif);color:var(--tan);height:22mm}
+.purpose h2{color:#fff;font-size:33pt;font-weight:500;line-height:1.22;margin-bottom:12mm}
+.purpose h2 em{color:var(--tan)}
+.purpose .sig{font:400 26pt var(--script);color:var(--tan)}
+.purpose .sig small{display:block;font:400 8pt var(--sans);letter-spacing:.3em;text-transform:uppercase;color:#b9b9cc}
+
+/* ---------- generic interior ---------- */
+.pad{padding:22mm 18mm 26mm}
+.lead{font-size:12.3pt;line-height:1.6;color:var(--navy);font-weight:400}
+.muted{color:var(--muted)}
+
+/* about */
+.about .hero{position:absolute;left:0;right:0;top:0;height:108mm}
+.about .hero .ph{inset:0;background-position:center 30%}
+.about .hero .tag{position:absolute;left:18mm;bottom:-1px;background:var(--paper);padding:9mm 12mm 0 0;width:120mm}
+.about .hero .tag h2{font-size:38pt}
+.about .cols{position:absolute;top:126mm;left:18mm;right:18mm;display:grid;grid-template-columns:1.25fr 1fr;gap:10mm}
+.creds{background:var(--navy);color:#fff;padding:8mm 8mm 6mm;position:relative;overflow:hidden}
+.creds h4{color:var(--tan);font:500 7.5pt var(--sans);letter-spacing:.28em;text-transform:uppercase;margin-bottom:4mm}
+.creds div{display:flex;gap:4mm;align-items:center;padding:2.6mm 0;border-bottom:.25mm solid rgba(255,255,255,.12);font:500 13pt var(--serif)}
+.creds div:last-child{border:0}
+.creds svg{width:7mm;height:7mm;color:var(--tan);flex:none}
+
+/* vision / mission / values */
+.vmv .top{display:grid;grid-template-columns:1fr 1fr;gap:8mm;margin-bottom:12mm}
+.vcard{padding:9mm 8mm;border-top:1.2mm solid var(--tan);background:#fff;box-shadow:0 3mm 8mm -5mm rgba(22,24,67,.25)}
+.vcard.navy{background:var(--navy);color:#e6e6f0}
+.vcard.navy h3{color:#fff}
+.vcard h3{font-size:24pt;margin-bottom:3mm}
+.vcard p{font-size:11pt;margin:0}
+.values{display:grid;grid-template-columns:1fr 1fr;gap:0;border:.3mm solid var(--sand)}
+.val{padding:8mm 8mm 7mm;border-right:.3mm solid var(--sand);border-bottom:.3mm solid var(--sand);position:relative}
+.val:nth-child(2n){border-right:0}
+.val:nth-last-child(-n+2){border-bottom:0}
+.val .num{font:600 30pt/1 var(--serif);color:var(--sand);position:absolute;right:7mm;top:6mm}
+.val h4{font-size:19pt;margin-bottom:2mm}
+.val p{font-size:9.6pt;color:var(--muted);margin:0}
+
+/* commitment */
+.commit .band{position:absolute;left:0;right:0;top:0;height:92mm;background:var(--navy);overflow:hidden}
+.commit .band .ph{right:0;top:0;bottom:0;width:86mm}
+.commit .band .ph:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy),rgba(22,24,67,0) 60%);z-index:1}
+.commit .band .txt{position:absolute;left:18mm;top:22mm;width:110mm;color:#fff}
+.commit .band h2{color:#fff;font-size:36pt;margin-bottom:4mm}
+.commit .band p{color:#d0d0e0;font-size:11pt}
+.why{position:absolute;top:104mm;left:18mm;right:18mm;display:grid;grid-template-columns:1fr 1fr;gap:7mm 10mm}
+.why div{display:grid;grid-template-columns:13mm 1fr;gap:4mm}
+.why .ic{width:13mm;height:13mm;border-radius:50%;background:var(--navy);display:grid;place-items:center;color:var(--tan)}
+.why .ic svg{width:6.5mm;height:6.5mm}
+.why h4{font-size:15.5pt;margin-bottom:1mm}
+.why p{font-size:9.5pt;color:var(--muted);margin:0}
+
+/* divider */
+.divider{background:var(--deep);color:#fff}
+.divider .ph{inset:0}
+.divider .shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,14,46,.35),rgba(13,14,46,.95) 62%)}
+.divider .body{position:absolute;left:18mm;right:18mm;bottom:28mm}
+.divider h2{color:#fff;font-size:60pt;font-weight:500;line-height:.95;margin-bottom:10mm}
+.divider h2 em{font-family:var(--script);font-style:normal;color:var(--tan);font-weight:400;font-size:66pt}
+.divider .list{display:grid;grid-template-columns:1fr 1fr 1fr;gap:3mm 6mm;border-top:.3mm solid rgba(255,255,255,.25);padding-top:7mm}
+.divider .list span{font:500 12pt var(--serif);color:#fff}
+.divider .list b{color:var(--tan);font:600 11pt var(--serif);margin-right:2mm}
+
+/* practice pages */
+.pa .img{position:absolute;left:0;right:0;top:0;height:118mm}
+.pa .img .ph{inset:0}
+.pa .img .grad{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,14,46,0) 35%,rgba(13,14,46,.9) 100%)}
+.pa .img .num{position:absolute;right:16mm;top:12mm;font:600 64pt/1 var(--serif);color:rgba(255,255,255,.85)}
+.pa .img .cap{position:absolute;left:18mm;right:18mm;bottom:10mm;color:#fff}
+.pa .img .cap .eyebrow{color:var(--tan);margin-bottom:3mm}
+.pa .img h2{color:#fff;font-size:35pt;font-weight:500}
+.pa .cnt{position:absolute;top:132mm;left:18mm;right:18mm;bottom:56mm;display:grid;grid-template-columns:1.32fr 1fr;gap:10mm}
+.pa .cnt .lead{font-size:13pt;line-height:1.5;margin-bottom:5mm}
+.pa .cnt p{font-size:10.8pt;color:var(--muted)}
+.pa h4{font:500 7.5pt var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--bronze);margin-bottom:3.5mm}
+.pa ul{list-style:none}
+.pa .svc li{position:relative;padding:1.7mm 0 1.7mm 6mm;border-bottom:.25mm solid var(--mist);font-size:10.6pt;color:var(--ink)}
+.pa .svc li:before{content:"";position:absolute;left:0;top:4.4mm;width:3mm;height:.5mm;background:var(--bronze)}
+.pa .side{background:var(--navy);color:#e4e4ee;padding:8mm 7mm;position:relative;overflow:hidden;align-self:start}
+.pa .side h4{color:var(--tan)}
+.pa .side li{font-size:10.4pt;padding:1.2mm 0 1.2mm 5mm;position:relative}
+.pa .side li:before{content:"";position:absolute;left:0;top:3.6mm;width:2mm;height:2mm;background:var(--tan);transform:rotate(45deg)}
+.pa .quote{margin-top:6mm;padding:5mm 0 0;border-top:.3mm solid var(--sand);font:italic 500 13.5pt/1.35 var(--serif);color:var(--navy)}
+.pa .side .str{right:0;bottom:0;width:40mm;height:40mm}
+
+.cta{position:absolute;left:18mm;right:18mm;bottom:22mm;height:24mm;background:var(--mist);border-left:1.2mm solid var(--tan);display:flex;align-items:center;justify-content:space-between;padding:0 8mm;overflow:hidden}
+.cta b{font:600 15pt var(--serif);color:var(--navy);display:block}
+.cta span{font-size:9pt;color:var(--muted)}
+.cta .r{text-align:right;font:500 10pt var(--sans);color:var(--navy);line-height:1.6}
+.cta .r i{font-style:normal;color:var(--bronze)}
+/* who we serve */
+.serve-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:9mm}
+.serve{background:#fff;padding:9mm 7mm 8mm;min-height:52mm;border-bottom:1mm solid var(--tan);box-shadow:0 3mm 8mm -6mm rgba(22,24,67,.3)}
+.serve svg{width:9mm;height:9mm;color:var(--bronze);margin-bottom:3mm}
+.serve h4{font-size:15pt;margin-bottom:1.5mm}
+.serve p{font-size:9pt;color:var(--muted);margin:0}
+.strip{position:absolute;left:0;right:0;bottom:0;height:78mm}
+.strip .ph{inset:0}
+.strip .q{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,14,46,.94),rgba(13,14,46,.5));display:flex;align-items:center;padding:0 18mm}
+.strip .q p{font:italic 500 19pt/1.3 var(--serif);color:#fff;max-width:130mm;margin:0}
+.strip .q p em{color:var(--tan)}
+
+/* approach */
+.steps{margin-top:10mm;position:relative}
+.steps:before{content:"";position:absolute;left:8mm;top:4mm;bottom:4mm;width:.4mm;background:var(--sand)}
+.step{display:grid;grid-template-columns:16mm 1fr;gap:6mm;padding-bottom:6.5mm;position:relative}
+.step .n{width:16mm;height:16mm;border-radius:50%;background:var(--navy);color:var(--tan);display:grid;place-items:center;font:600 16pt var(--serif);position:relative;z-index:1;border:1mm solid var(--paper)}
+.step h4{font-size:17pt;margin:1.5mm 0 1mm}
+.step p{font-size:9.8pt;color:var(--muted);margin:0}
+.fees{position:absolute;left:18mm;right:18mm;bottom:24mm;display:grid;grid-template-columns:1fr 1fr;gap:6mm}
+.fees div{background:var(--navy);color:#dcdce8;padding:7mm}
+.fees div:nth-child(2){background:var(--bronze);color:#fff}
+.fees h4{color:#fff;font-size:16pt;margin-bottom:2mm}
+.fees p{font-size:9.4pt;margin:0}
+
+/* leadership */
+.lead-page .portrait{position:absolute;left:18mm;top:40mm;width:72mm;height:120mm;background:var(--navy);overflow:hidden}
+.lead-page .portrait .ph{inset:0}
+.lead-page .portrait .mono{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(160deg,rgba(22,24,67,.6),rgba(13,14,46,.95))}
+.lead-page .portrait .mono img{width:34mm}
+.lead-page .portrait:after{content:"";position:absolute;left:5mm;top:5mm;right:5mm;bottom:5mm;border:.4mm solid rgba(195,154,120,.6)}
+.lead-page .name{position:absolute;left:98mm;right:18mm;top:40mm}
+.lead-page .name h2{font-size:38pt;margin-bottom:1mm}
+.lead-page .name .role{font:500 8pt var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--bronze);margin-bottom:6mm}
+.lead-page .name p{font-size:10.2pt;color:var(--muted)}
+.lead-page .tags{display:flex;flex-wrap:wrap;gap:2mm;margin-top:4mm}
+.lead-page .tags span{font-size:8.2pt;padding:1.4mm 3.2mm;border:.3mm solid var(--tan);color:var(--navy);letter-spacing:.04em}
+.lead-page .bottom{position:absolute;left:18mm;right:18mm;top:178mm}
+.lead-page blockquote{font:italic 500 17pt/1.35 var(--serif);color:var(--navy);border-left:1.2mm solid var(--tan);padding:1mm 0 1mm 7mm;margin-bottom:10mm}
+.team{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6mm}
+.team div{border-top:.6mm solid var(--navy);padding-top:4mm}
+.team h4{font-size:14.5pt;margin-bottom:1mm}
+.team p{font-size:9pt;color:var(--muted);margin:0}
+
+/* back cover */
+.back{background:var(--deep);color:#fff}
+.back .ph{left:0;right:0;top:0;height:125mm}
+.back .ph:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,14,46,0) 30%,var(--deep));z-index:1}
+.back .body{position:absolute;left:18mm;right:18mm;top:112mm;z-index:3}
+.back h2{color:#fff;font-size:44pt;font-weight:500;margin-bottom:3mm}
+.back h2 em{color:var(--tan)}
+.back .intro{color:#c9c9da;font-size:11pt;max-width:130mm;margin-bottom:10mm}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:6mm 10mm;margin-bottom:12mm}
+.contact div{display:grid;grid-template-columns:12mm 1fr;gap:4mm;align-items:center}
+.contact .ic{width:12mm;height:12mm;border-radius:50%;border:.4mm solid var(--tan);display:grid;place-items:center;color:var(--tan)}
+.contact .ic svg{width:5.5mm;height:5.5mm}
+.contact small{display:block;font:500 7pt var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--tan)}
+.contact span{font-size:11.5pt;color:#fff}
+.back .logo{position:absolute;left:0;right:0;bottom:30mm;text-align:center}
+.back .logo img{height:30mm;margin:0 auto;opacity:.95}
+.back .tagline{position:absolute;left:0;right:0;bottom:0;height:16mm;background:var(--navy);border-top:1mm solid var(--tan);display:flex;align-items:center;justify-content:center;font-size:8.5pt;letter-spacing:.14em;color:#d0d0e0}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+ <defs>
+  <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M4 7h16M6 7l-3 7a3 3 0 0 0 6 0zM18 7l-3 7a3 3 0 0 0 6 0z"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l4-1 11-11-3-3L5 16zM14 7l3 3M4 20h16"/></symbol>
+  <symbol id="i-stamp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a3 3 0 0 0-3 3c0 2 1.5 3 1.5 5v1H6a2 2 0 0 0-2 2v2h16v-2a2 2 0 0 0-2-2h-4.5v-1c0-2 1.5-3 1.5-5a3 3 0 0 0-3-3zM5 20h14"/></symbol>
+  <symbol id="i-talk" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h11v8H8l-4 3v-3H3z"/><path d="M17 8h4v8h-1v3l-4-3h-6v-2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><rect x="9" y="11" width="6" height="5" rx=".5"/><path d="M10 11V9.5a2 2 0 0 1 4 0V11"/></symbol>
+  <symbol id="i-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 9.5V20h14V9.5"/><path d="M10 20v-6h4v6"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></symbol>
+  <symbol id="i-family" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2.3"/><path d="M2.5 20c0-3.5 2.5-6 5.5-6s5.5 2.5 5.5 6M14.5 20c0-2.6 1.2-4.5 2.5-4.5s3.5 1.9 3.5 4.5"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><circle cx="9" cy="11" r="2.2"/><path d="M5.5 17c.5-2 2-3 3.5-3s3 1 3.5 3M14.5 10h4.5M14.5 14h3.5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3.5 6l8.5 7 8.5-7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19l1.3-3.9A8 8 0 1 1 8.6 18z"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5l8-2v18M12 8h8v13M2 21h20M7 8h2M7 12h2M7 16h2M15 12h2M15 16h2"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2M9 15l-3-3c1-4 5-9 13-9 0 8-5 12-9 13z"/><circle cx="15" cy="9" r="1.6"/></symbol>
+  <symbol id="i-hands" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V9M12 9c0-3 2-5 5-5 0 3-2 5-5 5zM12 13c0-3-2-5-5-5 0 3 2 5 5 5zM8 21h8"/></symbol>
+  <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15l-8-4V5a1.5 1.5 0 0 0-3 0v6l-7 4v2l7-2v4l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-4l8 2z"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5M5 9v9M9.5 9v9M14.5 9v9M19 9v9M3 21h18"/></symbol>
+ </defs>
+</svg>
+
+<!-- ============ 1. COVER ============ -->
+<section class="page cover">
+  <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1741991109886-90e70988f27b?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div>
+  <div class="shade"></div>
+  <div class="str" style="inset:0">
+    <i style="width:140mm;height:9mm;background:var(--tan);right:-52mm;top:22mm"></i>
+    <i style="width:140mm;height:20mm;background:var(--bronze);right:-70mm;top:2mm;opacity:.9"></i>
+  </div>
+  <div class="logo"><img src="assets/logo-white.png" alt="FN Muthoni Advocates"></div>
+  <div class="title">
+    <small>COMPANY PROFILE</small>
+    <h1>Sound counsel.<br>Steady <em>advocacy</em></h1>
+    <p>Advocates &nbsp;·&nbsp; Commissioner for Oaths &nbsp;·&nbsp; Notary Public</p>
+  </div>
+  <div class="bar">
+    <div><b>Telephone</b>011 9592394</div>
+    <div><b>Email</b>fnmuthoni.law@gmail.com</div>
+    <div><b>Address</b>P.O Box 29303-00100, Nairobi</div>
+    <div class="year">2026</div>
+  </div>
+</section>
+
+<!-- ============ 2. CONTENTS ============ -->
+<section class="page">
+  <div class="toc">
+    <div class="side">
+      <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1576414160011-98dfab3aa889?w=900&q=80&fm=jpg&fit=crop&sat=-15')"></div>
+      <div class="over"></div>
+      <div class="script">Where clarity<br>meets <em>care</em>.</div>
+    </div>
+    <div class="main">
+      <div class="eyebrow">Inside this profile</div>
+      <h2>Contents</h2>
+      <ol>
+        <li><span class="n">01</span><span class="t">Statement of Purpose</span><span class="pg">03</span></li>
+        <li><span class="n">02</span><span class="t">About the Firm</span><span class="pg">04</span></li>
+        <li><span class="n">03</span><span class="t">Vision, Mission &amp; Values</span><span class="pg">05</span></li>
+        <li><span class="n">04</span><span class="t">Our Commitment to You</span><span class="pg">06</span></li>
+        <li><span class="n">05</span><span class="t">Areas of Practice</span><span class="pg">07</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Conveyancing &amp; Real Estate</span><span class="pg">08</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Corporate &amp; Commercial</span><span class="pg">09</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Immigration Law &amp; Work Permits</span><span class="pg">10</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Banking &amp; Finance</span><span class="pg">11</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Litigation &amp; Dispute Resolution</span><span class="pg">12</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Mediation &amp; ADR</span><span class="pg">13</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Data Protection &amp; Privacy</span><span class="pg">14</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Family Law &amp; Succession</span><span class="pg">15</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Employment &amp; Labour</span><span class="pg">16</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Drafting &amp; Registration of Documents</span><span class="pg">17</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Notarial Services &amp; Oaths</span><span class="pg">18</span></li>
+        <li><span class="n">06</span><span class="t">Who We Serve</span><span class="pg">19</span></li>
+        <li><span class="n">07</span><span class="t">How We Work</span><span class="pg">20</span></li>
+        <li><span class="n">08</span><span class="t">Our Leadership</span><span class="pg">21</span></li>
+        <li><span class="n">09</span><span class="t">Contact Us</span><span class="pg">22</span></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. PURPOSE ============ -->
+<section class="page purpose">
+  <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1619771699034-fec6b1aabde3?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div>
+  <div class="shade"></div>
+  <div class="str" style="inset:0">
+    <i style="width:150mm;height:8mm;background:var(--tan);right:-60mm;bottom:40mm"></i>
+    <i style="width:150mm;height:18mm;background:var(--bronze);right:-80mm;bottom:20mm;opacity:.85"></i>
+  </div>
+  <div class="body">
+    <div class="eyebrow light">Statement of Purpose</div>
+    <div class="q">“</div>
+    <h2>To give every client <em>clear, honest and practical</em> legal counsel — protecting what matters to them today, and securing what they are building for tomorrow.</h2>
+    <div class="sig">FN Muthoni Advocates<small>Nairobi, Kenya</small></div>
+  </div>
+  <div class="foot light"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; COMPANY PROFILE 2026</span><b>03</b></div>
+</section>
+
+<!-- ============ 4. ABOUT ============ -->
+<section class="page about">
+  <div class="hero">
+    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1573164574397-dd250bc8a598?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div>
+    <div class="str" style="inset:0">
+      <i style="width:120mm;height:7mm;background:var(--tan);right:-48mm;top:14mm"></i>
+      <i style="width:120mm;height:16mm;background:var(--navy);right:-62mm;top:-4mm"></i>
+    </div>
+    <div class="tag"><div class="eyebrow">About the firm</div><h2>Who we are</h2></div>
+  </div>
+  <div class="cols">
+    <div>
+      <p class="lead">FN Muthoni Advocates is a Nairobi-based law firm built on a simple belief: good legal work starts with listening.</p>
+      <p class="muted">We act for individuals, families, entrepreneurs, companies and institutions across Kenya. Whether a client is buying their first home, bringing in international talent, growing a business, planning for the next generation or resolving a dispute, we take the time to understand the full picture before we advise.</p>
+      <p class="muted">Our practice goes beyond the traditional. Our advocates are <b style="color:var(--navy)">Certified Professional Mediators</b> and <b style="color:var(--navy)">Data Protection Officers</b> — so we can help clients settle disagreements without years in court, and help organisations meet their obligations under the Data Protection Act, 2019.</p>
+      <p class="muted">The result is counsel that is rigorous in substance, plain in language and always focused on the outcome that serves the client best.</p>
+    </div>
+    <div>
+      <div class="creds">
+        <h4>Our credentials</h4>
+        <div><svg><use href="#i-scale"/></svg>Advocates of the High Court of Kenya</div>
+        <div><svg><use href="#i-pen"/></svg>Commissioner for Oaths</div>
+        <div><svg><use href="#i-stamp"/></svg>Notary Public</div>
+        <div><svg><use href="#i-talk"/></svg>Certified Professional Mediators</div>
+        <div><svg><use href="#i-shield"/></svg>Data Protection Officers</div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; ABOUT THE FIRM</span><b>04</b></div>
+</section>
+
+<!-- ============ 5. VISION MISSION VALUES ============ -->
+<section class="page vmv">
+  <div class="pad">
+    <div class="eyebrow">What guides us</div>
+    <h2 style="font-size:40pt;margin-bottom:10mm">Vision, Mission <span style="font-family:var(--script);font-weight:400;color:var(--tan);font-size:44pt">&amp;</span> Values</h2>
+    <div class="top">
+      <div class="vcard navy"><h3>Our Vision</h3><p>To be the trusted legal partner for individuals, families and enterprises in Kenya and beyond — known for integrity, insight and genuine care.</p></div>
+      <div class="vcard"><h3>Our Mission</h3><p>To deliver clear, practical and principled legal solutions that protect our clients' rights, preserve their relationships and help them move forward with confidence.</p></div>
+    </div>
+    <div class="eyebrow">Our core values</div>
+    <div class="values">
+      <div class="val"><span class="num">01</span><h4>Integrity</h4><p>We act honestly and ethically in every matter. Our advice is guided by what is right and what genuinely serves the client — never by convenience.</p></div>
+      <div class="val"><span class="num">02</span><h4>Excellence</h4><p>We prepare thoroughly, research deeply and draft precisely. Every document and every appearance reflects the standard our clients deserve.</p></div>
+      <div class="val"><span class="num">03</span><h4>Confidentiality</h4><p>As Data Protection Officers we hold ourselves to the standards we advise on. What clients share with us stays protected.</p></div>
+      <div class="val"><span class="num">04</span><h4>Client Care</h4><p>We listen first, explain in plain language and keep clients informed at every stage. Accessible, responsive and respectful — always.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; VISION, MISSION &amp; VALUES</span><b>05</b></div>
+</section>
+
+<!-- ============ 6. COMMITMENT ============ -->
+<section class="page commit">
+  <div class="band">
+    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1100&q=72&fm=jpg&fit=crop&sat=-15')"></div>
+    <div class="txt">
+      <div class="eyebrow light">Our commitment to you</div>
+      <h2>Why clients choose FNM</h2>
+      <p>We measure our success by our clients' peace of mind. These six promises shape how we handle every instruction, large or small.</p>
+    </div>
+  </div>
+  <div class="why">
+    <div><span class="ic"><svg><use href="#i-heart"/></svg></span><span><h4>Client-first counsel</h4><p>Your goals set the direction. We tailor every strategy to your circumstances, not a template.</p></span></div>
+    <div><span class="ic"><svg><use href="#i-eye"/></svg></span><span><h4>Transparent fees</h4><p>You know the expected cost before work begins. No surprises, no hidden charges.</p></span></div>
+    <div><span class="ic"><svg><use href="#i-clock"/></svg></span><span><h4>Responsive service</h4><p>Calls and messages are returned promptly, and you receive regular updates on your matter.</p></span></div>
+    <div><span class="ic"><svg><use href="#i-talk"/></svg></span><span><h4>Resolution before litigation</h4><p>As certified mediators we look first for faster, less costly routes — and go to court when it is the right call.</p></span></div>
+    <div><span class="ic"><svg><use href="#i-shield"/></svg></span><span><h4>Uncompromising confidentiality</h4><p>Your information is handled under the same data protection standards we help organisations achieve.</p></span></div>
+    <div><span class="ic"><svg><use href="#i-scale"/></svg></span><span><h4>Plain-language advice</h4><p>We explain the law clearly so that you can make informed decisions with confidence.</p></span></div>
+  </div>
+  <div class="strip" style="height:70mm">
+    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1562564055-71e051d33c19?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div>
+    <div class="q"><p>“Your matter is never just a file to us. It is your home, your business, your family — and we treat it with the <em>care</em> it deserves.”</p></div>
+  </div>
+</section>
+
+<!-- ============ 7. PRACTICE DIVIDER ============ -->
+<section class="page divider">
+  <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1589216532372-1c2a367900d9?w=1400&q=72&fm=jpg&fit=crop&sat=-15');background-position:center 30%"></div>
+  <div class="shade"></div>
+  <div class="str" style="inset:0">
+    <i style="width:150mm;height:9mm;background:var(--tan);right:-60mm;top:24mm"></i>
+    <i style="width:150mm;height:20mm;background:var(--bronze);right:-78mm;top:4mm;opacity:.9"></i>
+  </div>
+  <div class="body">
+    <div class="eyebrow light">Section 05</div>
+    <h2>Areas of<br><em>Practice</em></h2>
+    <div class="list">
+      <span><b>01</b>Conveyancing &amp; Real Estate</span>
+      <span><b>02</b>Corporate &amp; Commercial</span>
+      <span><b>03</b>Immigration &amp; Work Permits</span>
+      <span><b>04</b>Banking &amp; Finance</span>
+      <span><b>05</b>Litigation &amp; Disputes</span>
+      <span><b>06</b>Mediation &amp; ADR</span>
+      <span><b>07</b>Data Protection &amp; Privacy</span>
+      <span><b>08</b>Family Law &amp; Succession</span>
+      <span><b>09</b>Employment &amp; Labour</span>
+      <span><b>10</b>Drafting &amp; Registration</span>
+      <span><b>11</b>Notarial Services &amp; Oaths</span>
+    </div>
+  </div>
+  <div class="foot light"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>07</b></div>
+</section>
+
+<!-- ============ 8. CONVEYANCING ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">01</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Conveyancing &amp; Real Estate</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">Property is often the most significant investment our clients will ever make. We make sure it is secure from the first search to the final transfer.</p>
+      <p>We act for buyers, sellers, landlords, tenants, developers, lenders and members of the diaspora investing at home. Our approach is grounded in rigorous due diligence and a clear understanding of Kenya's land registration regime, so that titles are clean, consents are in place and money changes hands only when it is safe to do so.</p>
+      <div class="quote">“A clean title is not luck — it is the product of careful, unhurried diligence.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Sale and purchase of land, homes and apartments</li>
+        <li>Official searches and title due diligence</li>
+        <li>Transfers, subdivisions and change of user</li>
+        <li>Charges and discharges for bank financing</li>
+        <li>Residential and commercial leases</li>
+        <li>Land Control Board consents</li>
+        <li>Off-plan purchase agreements</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Buying, selling or leasing property?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>08</b></div>
+</section>
+
+<!-- ============ 9. CORPORATE ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1573164574511-73c773193279?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">02</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Corporate &amp; Commercial</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">We advise businesses from the very first decision — choosing the right structure — through every contract, partnership and milestone that follows.</p>
+      <p>Entrepreneurs, SMEs, established companies, NGOs and SACCOs rely on us to set up properly, contract safely and stay compliant as they grow. We do not offer isolated advice; we walk the journey with our clients, anticipating risk before it becomes a dispute.</p>
+      <div class="quote">“Sound structures and clear contracts are the quiet foundation of every successful enterprise.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Company and business name registration</li>
+        <li>Shareholder and partnership agreements</li>
+        <li>Drafting and review of commercial contracts</li>
+        <li>Corporate governance and secretarial services</li>
+        <li>Regulatory compliance and licensing</li>
+        <li>NGO, SACCO and society registration</li>
+        <li>Joint ventures and business restructuring</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Starting or growing a business?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>09</b></div>
+</section>
+
+<!-- ============ 10. IMMIGRATION ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1581553673739-c4906b5d0de8?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">03</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Immigration Law &amp; Work Permits</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">Kenya is a gateway to East Africa. We help employers, investors and families navigate its immigration framework with confidence.</p>
+      <p>Guided by the Kenya Citizenship and Immigration Act, we prepare complete, compliant applications to the Department of Immigration Services and follow them through to approval. Employers rely on us to keep their foreign workforce compliant; families rely on us to keep loved ones together.</p>
+      <div class="quote">“The right permit, filed the right way, the first time.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Work permit applications and renewals (all classes)</li>
+        <li>Investor and business permits</li>
+        <li>Special passes and short-term permits</li>
+        <li>Dependant passes for spouses and children</li>
+        <li>Permanent residence applications</li>
+        <li>Citizenship by registration</li>
+        <li>Employer immigration compliance and appeals</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Hiring talent or relocating to Kenya?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>10</b></div>
+</section>
+
+<!-- ============ BANKING ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">04</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Banking &amp; Finance</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">Behind every credit facility is a set of documents that must be right. We make sure loans are properly secured — and that borrowers understand exactly what they are signing.</p>
+      <p>We act for lenders, borrowers, SACCOs and microfinance institutions on facility documentation, the creation and registration of securities, and regulatory compliance. When a facility goes wrong, we guide restructuring, settlement and, where necessary, the lawful realisation of securities.</p>
+      <div class="quote">“Well-documented security protects the lender and the borrower alike.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Loan and facility agreements</li>
+        <li>Charges and further charges over land</li>
+        <li>Debentures, guarantees and indemnities</li>
+        <li>Asset finance and security over movable property</li>
+        <li>Discharges and release of securities</li>
+        <li>Loan restructuring and settlement agreements</li>
+        <li>SACCO and microfinance compliance</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Lending, borrowing or restructuring?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>11</b></div>
+</section>
+
+<!-- ============ 11. LITIGATION ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">05</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Litigation &amp; Dispute Resolution</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">When a dispute must be decided in court, we prepare meticulously and advocate firmly — always with an eye on the most efficient path to a good outcome.</p>
+      <p>We represent individuals and organisations before courts and tribunals in civil, commercial, land and constitutional matters. From early case assessment and demand letters through to hearings, judgment and enforcement, we keep clients informed and in control of every decision.</p>
+      <div class="quote">“Thorough preparation is the most persuasive argument of all.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Civil and commercial litigation</li>
+        <li>Debt recovery and demand letters</li>
+        <li>Land and environment disputes</li>
+        <li>Judicial review and constitutional petitions</li>
+        <li>Succession and probate disputes</li>
+        <li>Appeals</li>
+        <li>Execution and enforcement of judgments</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Facing a dispute or unpaid debt?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>12</b></div>
+</section>
+
+<!-- ============ 12. MEDIATION ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">06</div>
+    <div class="cap"><div class="eyebrow">Specialist practice</div><h2>Mediation &amp; Alternative Dispute Resolution</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">Not every dispute needs a courtroom. As Certified Professional Mediators, we help parties reach their own solutions — privately, quickly and at a fraction of the cost.</p>
+      <p>Mediation preserves what litigation often destroys: business partnerships, family bonds and working relationships. We act as neutral mediators and as advocates representing clients in mediation, including court-annexed mediation, and we draft settlement agreements that are clear and enforceable.</p>
+    </div>
+    <div class="side">
+      <h4>Where mediation works best</h4>
+      <ul>
+        <li>Commercial and contract disputes</li>
+        <li>Family and succession disagreements</li>
+        <li>Land and boundary disputes</li>
+        <li>Landlord and tenant conflicts</li>
+        <li>Workplace and employment disputes</li>
+        <li>Court-annexed mediation</li>
+        <li>Binding settlement agreements</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Prefer to resolve it privately?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>13</b></div>
+</section>
+
+<!-- ============ 13. DATA PROTECTION ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph mono" style="background-image:url('https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1400&q=72&fm=jpg&fit=crop&sat=-100')"></div><div class="grad"></div><div class="num">07</div>
+    <div class="cap"><div class="eyebrow">Specialist practice</div><h2>Data Protection &amp; Privacy</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">Every organisation that collects personal data — customers, patients, students, staff or members — now carries legal duties under the Data Protection Act, 2019.</p>
+      <p>As certified Data Protection Officers, we make compliance practical and proportionate. We help businesses, schools, clinics, SACCOs, NGOs and faith-based organisations register with the Office of the Data Protection Commissioner (ODPC), put the right policies in place and respond confidently if something goes wrong.</p>
+    </div>
+    <div class="side">
+      <h4>Our compliance services</h4>
+      <ul>
+        <li>ODPC registration for controllers and processors</li>
+        <li>Data protection impact assessments</li>
+        <li>Privacy policies, notices and consent forms</li>
+        <li>Data sharing and processing agreements</li>
+        <li>Staff training and awareness</li>
+        <li>Data breach response planning</li>
+        <li>Outsourced Data Protection Officer service</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Is your organisation compliant?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>14</b></div>
+</section>
+
+<!-- ============ 14. FAMILY ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1643818657367-491080baeece?w=1400&q=72&fm=jpg&fit=crop&sat=-15');background-position:center 35%"></div><div class="grad"></div><div class="num">08</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Family Law &amp; Succession</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">Family matters are deeply personal. We handle them with sensitivity, discretion and a steady hand.</p>
+      <p>We help clients plan ahead with wills and estate planning, guide families through probate and the administration of estates, and support them through difficult transitions such as divorce and custody — always seeking solutions that protect children and preserve family harmony where possible.</p>
+      <div class="quote">“Planning today is the kindest gift you can leave the people you love.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Wills and estate planning</li>
+        <li>Grant of probate and letters of administration</li>
+        <li>Confirmation and distribution of estates</li>
+        <li>Divorce and matrimonial property</li>
+        <li>Child custody and maintenance</li>
+        <li>Adoption and guardianship</li>
+        <li>Family mediation</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Planning for your family's future?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>15</b></div>
+</section>
+
+<!-- ============ 15. EMPLOYMENT ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1632923943917-a1dd60878fa4?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">09</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Employment &amp; Labour</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">Productive workplaces are built on fair rules, clearly applied. We help employers and employees get both right.</p>
+      <p>We advise organisations on contracts, policies and procedures that comply with Kenyan labour law, guide them through sensitive processes such as discipline and redundancy, and represent both employers and employees in disputes — balancing the needs of the enterprise with the dignity of every worker.</p>
+      <div class="quote">“Prevention is better than a claim — and far less costly.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Employment contracts and HR policies</li>
+        <li>Disciplinary and termination procedures</li>
+        <li>Redundancy processes</li>
+        <li>Unfair dismissal claims</li>
+        <li>Employment and Labour Relations Court matters</li>
+        <li>Workplace investigations</li>
+        <li>Employee data privacy compliance</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Need help with a workplace matter?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>16</b></div>
+</section>
+
+<!-- ============ DRAFTING ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1473186505569-9c61870c11f9?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">10</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Drafting &amp; Registration of Documents</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">A well-drafted document prevents the disputes of tomorrow. We prepare clear, enforceable documents and see them through stamping and registration.</p>
+      <p>From a family trust that protects assets for the next generation to a power of attorney that lets someone act on your behalf while you are abroad, we draft documents tailored to your circumstances and lodge them at the relevant registry so they carry full legal effect.</p>
+      <div class="quote">“Say exactly what you mean — and make it count in law.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Trust deeds — family, investment and charitable</li>
+        <li>Powers of attorney — general and specific</li>
+        <li>Registration of trust deeds and powers of attorney</li>
+        <li>Deeds of gift and declarations of trust</li>
+        <li>Sale, tenancy, loan and partnership agreements</li>
+        <li>Memoranda of understanding</li>
+        <li>Wills, codicils and deed polls</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Need a document drafted or registered?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>17</b></div>
+</section>
+
+<!-- ============ 16. NOTARIAL ============ -->
+<section class="page pa">
+  <div class="img"><div class="ph" style="background-image:url('https://images.unsplash.com/photo-1521791055366-0d553872125f?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div><div class="grad"></div><div class="num">11</div>
+    <div class="cap"><div class="eyebrow">Practice area</div><h2>Notarial Services &amp; Commissioner for Oaths</h2></div></div>
+  <div class="cnt">
+    <div>
+      <p class="lead">Quick, reliable commissioning and notarisation of documents for use in Kenya and abroad.</p>
+      <p>As Commissioner for Oaths and Notary Public, we authenticate the documents that daily life and business depend on — from a simple affidavit to papers bound for an embassy, a foreign court or an overseas university. We work efficiently, so most commissioning is completed while you wait.</p>
+      <div class="quote">“Please bring original identification and your documents unsigned.”</div>
+    </div>
+    <div>
+      <h4>Our services</h4>
+      <ul class="svc">
+        <li>Affidavits and statutory declarations</li>
+        <li>Notarisation of documents for use abroad</li>
+        <li>Certification of true copies</li>
+        <li>Powers of attorney</li>
+        <li>Witnessing of signatures</li>
+        <li>Change of name deed polls</li>
+        <li>Declarations for embassies and institutions</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cta"><div><b>Need a document commissioned today?</b><span>Book a confidential consultation with our team.</span></div><div class="r"><i>Call / WhatsApp</i> 011 9592394<br><i>Email</i> fnmuthoni.law@gmail.com</div></div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; AREAS OF PRACTICE</span><b>18</b></div>
+</section>
+
+<!-- ============ 17. WHO WE SERVE ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">Section 06</div>
+    <h2 style="font-size:40pt;margin-bottom:4mm">Who we serve</h2>
+    <p class="muted" style="max-width:140mm;font-size:11pt">Our clients range from individuals with a single question to organisations that need a long-term legal partner. Each receives the same care and attention.</p>
+    <div class="serve-grid">
+      <div class="serve"><svg><use href="#i-family"/></svg><h4>Individuals &amp; Families</h4><p>Property, wills, succession, family and personal matters.</p></div>
+      <div class="serve"><svg><use href="#i-rocket"/></svg><h4>Entrepreneurs &amp; SMEs</h4><p>Registration, contracts, compliance and growth advisory.</p></div>
+      <div class="serve"><svg><use href="#i-building"/></svg><h4>Corporates</h4><p>Governance, transactions, employment and disputes.</p></div>
+      <div class="serve"><svg><use href="#i-plane"/></svg><h4>Expatriates &amp; Employers</h4><p>Work permits, passes and immigration compliance.</p></div>
+      <div class="serve"><svg><use href="#i-hands"/></svg><h4>NGOs &amp; Faith-Based Bodies</h4><p>Registration, governance and data protection.</p></div>
+      <div class="serve"><svg><use href="#i-bank"/></svg><h4>SACCOs, Schools &amp; Clinics</h4><p>ODPC registration, privacy policies and DPO support.</p></div>
+    </div>
+  </div>
+  <div class="strip">
+    <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1741991110666-88115e724741?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div>
+    <div class="q"><p>“Whether you are in Nairobi or in the <em>diaspora</em>, we are your trusted legal partner at home.”</p></div>
+  </div>
+</section>
+
+<!-- ============ 18. HOW WE WORK ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="eyebrow">Section 07</div>
+    <h2 style="font-size:40pt;margin-bottom:4mm">How we work</h2>
+    <p class="muted" style="max-width:140mm;font-size:11pt">A clear, predictable process — so you always know where your matter stands and what happens next.</p>
+    <div class="steps">
+      <div class="step"><span class="n">1</span><div><h4>Consultation</h4><p>We meet in person or online to understand your situation, your goals and your concerns. Everything you share is confidential.</p></div></div>
+      <div class="step"><span class="n">2</span><div><h4>Advice &amp; fee guidance</h4><p>You receive honest, plain-language advice on your options, the likely timeline and the expected cost before any work begins.</p></div></div>
+      <div class="step"><span class="n">3</span><div><h4>Engagement</h4><p>Once you are ready, we confirm our instructions in writing and set out exactly what we will do for you.</p></div></div>
+      <div class="step"><span class="n">4</span><div><h4>Action</h4><p>We draft, negotiate, mediate, file or litigate — whichever route best serves your interests — keeping you updated at each milestone.</p></div></div>
+      <div class="step"><span class="n">5</span><div><h4>Completion &amp; aftercare</h4><p>We close the matter properly, hand over all documents and remain available for whatever you need next.</p></div></div>
+    </div>
+  </div>
+  <div class="fees">
+    <div><h4>Fair, transparent fees</h4><p>Our fees are guided by the Advocates (Remuneration) Order. Where appropriate we offer fixed fees, so you can plan with certainty.</p></div>
+    <div><h4>Easy to reach</h4><p>Call, email or WhatsApp us. Consultations are available in person in Nairobi or virtually, wherever you are.</p></div>
+  </div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; HOW WE WORK</span><b>20</b></div>
+</section>
+
+<!-- ============ 19. LEADERSHIP ============ -->
+<section class="page lead-page">
+  <div style="position:absolute;left:18mm;top:20mm"><div class="eyebrow">Section 08</div></div>
+  <div class="portrait">
+    <div class="mono"><img src="assets/monogram-white.png" alt=""></div>
+  </div>
+  <div class="name">
+    <h2>F. N. Muthoni</h2>
+    <div class="role">Principal Advocate</div>
+    <p>F. N. Muthoni is the Principal of FN Muthoni Advocates and an Advocate of the High Court of Kenya. Muthoni leads the firm's practice and personally oversees client matters across conveyancing, corporate, family, immigration and dispute resolution.</p>
+    <p>Beyond practice as an advocate, Muthoni is a Commissioner for Oaths and Notary Public, a Certified Professional Mediator and a certified Data Protection Officer — a combination that allows the firm to resolve disputes outside the courtroom and to guide organisations through Kenya's data protection regime.</p>
+    <div class="tags"><span>Advocate of the High Court</span><span>Commissioner for Oaths</span><span>Notary Public</span><span>Certified Mediator</span><span>Data Protection Officer</span></div>
+  </div>
+  <div class="bottom">
+    <blockquote>“Clients come to us at important moments in their lives and businesses. Our job is to bring clarity, care and steady advocacy to those moments.”</blockquote>
+    <div class="eyebrow">Supported by a dedicated team</div>
+    <div class="team">
+      <div><h4>Legal Practice</h4><p>Advocates and associates handling research, drafting and representation.</p></div>
+      <div><h4>Client Relations</h4><p>Your first point of contact for appointments, updates and enquiries.</p></div>
+      <div><h4>Administration</h4><p>Court filings, registry follow-ups and document management.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; OUR LEADERSHIP</span><b>21</b></div>
+</section>
+
+<!-- ============ 20. BACK COVER ============ -->
+<section class="page back">
+  <div class="ph" style="background-image:url('https://images.unsplash.com/photo-1741991109902-98bf764fb35d?w=1400&q=72&fm=jpg&fit=crop&sat=-15')"></div>
+  <div class="str" style="inset:0;z-index:2">
+    <i style="width:150mm;height:8mm;background:var(--tan);right:-60mm;top:20mm"></i>
+    <i style="width:150mm;height:18mm;background:var(--bronze);right:-78mm;top:2mm;opacity:.9"></i>
+  </div>
+  <div class="body">
+    <div class="eyebrow light">Section 09 &nbsp;·&nbsp; Contact us</div>
+    <h2>Let's talk about <em>your matter.</em></h2>
+    <p class="intro">Reach out for a confidential consultation. We will listen, explain your options clearly and help you take the next step with confidence.</p>
+    <div class="contact">
+      <div><span class="ic"><svg><use href="#i-phone"/></svg></span><span><small>Call</small><span>011 9592394</span></span></div>
+      <div><span class="ic"><svg><use href="#i-chat"/></svg></span><span><small>WhatsApp</small><span>+254 119 592 394</span></span></div>
+      <div><span class="ic"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><span>fnmuthoni.law@gmail.com</span></span></div>
+      <div><span class="ic"><svg><use href="#i-pin"/></svg></span><span><small>Postal address</small><span>P.O Box 29303-00100, Nairobi</span></span></div>
+      <div><span class="ic"><svg><use href="#i-clock"/></svg></span><span><small>Office hours</small><span>Monday – Friday, 8:00am – 5:00pm</span></span></div>
+    </div>
+  </div>
+  <div class="logo"><img src="assets/logo-white.png" alt="FN Muthoni Advocates"></div>
+  <div class="tagline">CERTIFIED PROFESSIONAL MEDIATORS &amp; DATA PROTECTION OFFICERS</div>
+</section>
+
+</body>
+</html>
