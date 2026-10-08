@@ -174,6 +174,13 @@ p { margin: 0 0 1em; }
 .pa-card:hover h3 { color: var(--white); }
 .pa-card:hover p { color: #c9c9d6; }
 .pa-card:hover .icon, .pa-card:hover .more { color: var(--tan); }
+.pa-card.pa-ask { background: var(--navy); justify-content: center; }
+.pa-card.pa-ask h3 { color: var(--white); }
+.pa-card.pa-ask p { color: #c9c9d6; }
+.pa-card.pa-ask .more { color: var(--tan); margin-top: 8px; }
+.pa-card.pa-ask:hover { background: var(--bronze); }
+.pa-card.pa-ask:hover p { color: var(--white); }
+.pa-card.pa-ask:hover .more { color: var(--white); }
 .center-cta { text-align: center; margin-top: 46px; }
 
 /* Specialisms band */
