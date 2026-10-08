@@ -213,6 +213,23 @@ p{margin-bottom:3.2mm}
 .team h4{font-size:14.5pt;margin-bottom:1mm}
 .team p{font-size:9pt;color:var(--muted);margin:0}
 
+/* partners & heads page */
+.ppl{position:absolute;left:18mm;right:18mm;display:grid;grid-template-columns:58mm 1fr;gap:9mm;align-items:start}
+.ppl.flip{grid-template-columns:1fr 58mm}
+.ppl.flip .pt{order:2}
+.ppl .pt{height:70mm;position:relative;overflow:hidden;display:grid;place-items:center;
+  background:linear-gradient(128deg,var(--navy) 0 60%,var(--tan) 60% 65%,var(--navy) 65% 71%,var(--bronze) 71% 100%)}
+.ppl .pt span{width:28mm;height:28mm;border:.5mm solid var(--tan);display:grid;place-items:center;font:500 22pt/1 var(--serif);color:#fff;letter-spacing:.04em;background:rgba(13,14,46,.35)}
+.ppl h3{font-size:28pt;margin-bottom:1mm}
+.ppl .role{font:500 7.8pt var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--bronze);margin-bottom:4.5mm}
+.ppl p{font-size:9.8pt;color:var(--muted);margin-bottom:2.6mm}
+.ppl .tags{display:flex;flex-wrap:wrap;gap:2mm;margin-top:3mm}
+.ppl .tags span{font-size:8.2pt;padding:1.4mm 3.2mm;border:.3mm solid var(--tan);color:var(--navy)}
+.lt{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6mm}
+.lt div{border-top:.6mm solid var(--navy);padding-top:4mm}
+.lt h4{font-size:15pt;margin-bottom:1mm}
+.lt p{font-size:8.6pt;letter-spacing:.14em;text-transform:uppercase;color:var(--bronze);margin:0}
+
 /* back cover */
 .back{background:var(--deep);color:#fff}
 .back .ph{left:0;right:0;top:0;height:125mm}
@@ -314,7 +331,9 @@ p{margin-bottom:3.2mm}
         <li><span class="n">06</span><span class="t">Who We Serve</span><span class="pg">19</span></li>
         <li><span class="n">07</span><span class="t">How We Work</span><span class="pg">20</span></li>
         <li><span class="n">08</span><span class="t">Our Leadership</span><span class="pg">21</span></li>
-        <li><span class="n">09</span><span class="t">Contact Us</span><span class="pg">22</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Principal Advocate</span><span class="pg">21</span></li>
+        <li class="sub"><span class="n"></span><span class="t">Partners &amp; Heads of Department</span><span class="pg">22</span></li>
+        <li><span class="n">09</span><span class="t">Contact Us</span><span class="pg">23</span></li>
       </ol>
     </div>
   </div>
@@ -792,14 +811,44 @@ p{margin-bottom:3.2mm}
   </div>
   <div class="bottom">
     <blockquote>“Clients come to us at important moments in their lives and businesses. Our job is to bring clarity, care and steady advocacy to those moments.”</blockquote>
-    <div class="eyebrow">Supported by a dedicated team</div>
-    <div class="team">
-      <div><h4>Legal Practice</h4><p>Advocates and associates handling research, drafting and representation.</p></div>
-      <div><h4>Client Relations</h4><p>Your first point of contact for appointments, updates and enquiries.</p></div>
-      <div><h4>Administration</h4><p>Court filings, registry follow-ups and document management.</p></div>
+    <div class="eyebrow">Our leadership team</div>
+    <div class="lt">
+      <div><h4>F. N. Muthoni</h4><p>Principal Advocate</p></div>
+      <div><h4>Machura J.</h4><p>Partner &amp; Head of Immigration</p></div>
+      <div><h4>Franklin Morang&rsquo;a</h4><p>Head of Commercial Law</p></div>
     </div>
+    <p class="muted" style="font-size:9.6pt;margin-top:6mm">Our leaders are supported by a dedicated team of associates, client relations and administrative staff who keep every matter moving.</p>
   </div>
   <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; OUR LEADERSHIP</span><b>21</b></div>
+</section>
+
+<!-- ============ PARTNERS & HEADS ============ -->
+<section class="page">
+  <div class="pad" style="padding-bottom:0">
+    <div class="eyebrow">Section 08 &nbsp;·&nbsp; Our leadership</div>
+    <h2 style="font-size:38pt">Partners &amp; Heads of Department</h2>
+  </div>
+  <div class="ppl" style="top:56mm">
+    <div class="pt"><span>MJ</span></div>
+    <div>
+      <h3>Machura J.</h3>
+      <div class="role">Partner &amp; Head of Immigration Department</div>
+      <p>Machura J. is a Partner at FN Muthoni Advocates and heads the firm's Immigration Department. A distinguished specialist in immigration law, Machura advises employers, investors, expatriates and families on work permits, special and dependant passes, permanent residence and every stage of the approval process — as well as the drafting and registration of supporting documents.</p>
+      <p>Beyond immigration, Machura is a finance and development strategist for corporate bodies and SMEs, helping businesses plan their growth, structure their financing and build the compliance foundations that sustain long-term development.</p>
+      <div class="tags"><span>Immigration Law</span><span>Work Permits &amp; Approvals</span><span>Document Registration</span><span>Finance &amp; Development Strategy</span></div>
+    </div>
+  </div>
+  <div class="ppl flip" style="top:170mm">
+    <div class="pt"><span>FM</span></div>
+    <div>
+      <h3>Franklin Morang&rsquo;a</h3>
+      <div class="role">Head of Commercial Law Department</div>
+      <p>Franklin Morang&rsquo;a leads the firm's Commercial Law Department, advising businesses and institutions on commercial transactions, contracts and regulatory matters. Franklin's practice is grounded in rigorous legal research and legislative drafting — skills that bring precision to every agreement, opinion and policy the department prepares.</p>
+      <p>Franklin also advises on banking and finance, employment matters and corporate debt recovery, helping lenders, employers and businesses protect their interests and recover what they are owed through efficient, lawful processes.</p>
+      <div class="tags"><span>Commercial Law</span><span>Research &amp; Legislative Drafting</span><span>Banking &amp; Finance</span><span>Employment</span><span>Corporate Debt Recovery</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>FN MUTHONI ADVOCATES &nbsp;|&nbsp; OUR LEADERSHIP</span><b>22</b></div>
 </section>
 
 <!-- ============ 20. BACK COVER ============ -->
