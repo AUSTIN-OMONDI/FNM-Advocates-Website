@@ -156,7 +156,7 @@ p { margin: 0 0 1em; }
 
 /* Practice areas grid */
 .practice { background: var(--white); }
-.pa-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--mist); border: 1px solid var(--mist); }
+.pa-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--mist); border: 1px solid var(--mist); }
 .pa-card {
   position: relative; background: var(--white); padding: 38px 30px 34px; text-decoration: none;
   display: flex; flex-direction: column; gap: 12px; overflow: hidden; transition: background .3s, color .3s;
@@ -328,7 +328,7 @@ p { margin: 0 0 1em; }
 
 /* Responsive */
 @media (max-width: 1080px) {
-  .pa-grid { grid-template-columns: repeat(2, 1fr); }
+  .pa-grid { grid-template-columns: repeat(3, 1fr); }
   .creds .wrap { grid-template-columns: repeat(3, 1fr); }
   .cred:nth-child(3) { border-right: 0; }
   .cred:nth-child(n+4) { border-top: 1px solid var(--mist); }
@@ -337,6 +337,7 @@ p { margin: 0 0 1em; }
 }
 @media (max-width: 920px) {
   .menu-toggle { display: block; }
+  .pa-grid { grid-template-columns: repeat(2, 1fr); }
   .nav {
     position: absolute; top: 84px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0;
     background: var(--paper); border-bottom: 1px solid var(--mist); padding: 8px 16px 20px;
